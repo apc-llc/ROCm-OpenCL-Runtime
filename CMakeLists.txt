@@ -52,8 +52,8 @@ set(AMDGPU_TARGET_TRIPLE "amdgcn-amd-amdhsa-amdgizcl")
 
 #add_subdirectory(compiler/lib/loaders/elf/utils/libelf)
 
-find_package(ROCR REQUIRED)
-add_subdirectory(runtime)
+#find_package(ROCR REQUIRED)
+#add_subdirectory(runtime)
 
 set(OPENCL_INCLUDE_DIRS
   ${CMAKE_SOURCE_DIR}/api/opencl/khronos/headers
