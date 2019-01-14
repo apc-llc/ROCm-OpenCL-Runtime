@@ -42,7 +42,7 @@ add_library(oclruntime OBJECT
   device/blit.cpp
   device/devkernel.cpp
   device/devwavelimiter.cpp
-  device/devprogram.cpp
+#  device/devprogram.cpp
   platform/kernel.cpp
   platform/context.cpp
   platform/command.cpp

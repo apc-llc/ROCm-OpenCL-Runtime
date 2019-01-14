@@ -24,12 +24,12 @@ set(CLANG_ENABLE_STATIC_ANALYZER OFF CACHE BOOL "")
 # override default option value in library and driver
 set(GENERIC_IS_ZERO ON CACHE BOOL ON FORCE)
 
-add_subdirectory(compiler/llvm)
+#add_subdirectory(compiler/llvm)
 
-find_package(LLVM REQUIRED CONFIG PATHS ${CMAKE_BINARY_DIR}/compiler/llvm NO_DEFAULT_PATH)
+#find_package(LLVM REQUIRED CONFIG PATHS ${CMAKE_BINARY_DIR}/compiler/llvm NO_DEFAULT_PATH)
 
 list(APPEND CMAKE_MODULE_PATH "${LLVM_CMAKE_DIR}")
-include(AddLLVM)
+#include(AddLLVM)
 
 add_definitions(${LLVM_DEFINITIONS})
 # TODO: add find_package for Clang and lld, and also use LLVM/Clang variables got from their config
@@ -41,16 +41,16 @@ include_directories(${CMAKE_SOURCE_DIR}/compiler/llvm/tools/lld/include)
 include_directories(${CMAKE_SOURCE_DIR}/compiler/llvm/lib/Target/AMDGPU)
 include_directories(${CMAKE_BINARY_DIR}/compiler/llvm/lib/Target/AMDGPU)
 
-add_subdirectory(compiler/driver)
+#add_subdirectory(compiler/driver)
 
 set(BUILD_HC_LIB OFF CACHE BOOL "")
 set(ROCM_DEVICELIB_INCLUDE_TESTS OFF CACHE BOOL "")
 set(AMDGCN_TARGETS_LIB_LIST "AMDGCN_LIB_TARGETS")
 set(AMDGCN_TARGETS_LIB_DEPS "AMDGCN_DEP_TARGETS")
 set(AMDGPU_TARGET_TRIPLE "amdgcn-amd-amdhsa-amdgizcl")
-add_subdirectory(library/amdgcn)
+#add_subdirectory(library/amdgcn)
 
-add_subdirectory(compiler/lib/loaders/elf/utils/libelf)
+#add_subdirectory(compiler/lib/loaders/elf/utils/libelf)
 
 find_package(ROCR REQUIRED)
 add_subdirectory(runtime)
@@ -59,7 +59,7 @@ set(OPENCL_INCLUDE_DIRS
   ${CMAKE_SOURCE_DIR}/api/opencl/khronos/headers
   ${CMAKE_SOURCE_DIR}/api/opencl/khronos/headers/opencl2.2)
 
-add_subdirectory(api/opencl/amdocl)
+#add_subdirectory(api/opencl/amdocl)
 add_subdirectory(api/opencl/khronos/icd)
 
 add_subdirectory(tools/clinfo)
