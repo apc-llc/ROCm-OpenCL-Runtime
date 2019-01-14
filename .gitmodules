@@ -1,9 +1,6 @@
 [submodule "compiler/driver"]
 	path = compiler/driver
 	url = https://github.com/RadeonOpenCompute/ROCm-OpenCL-Driver.git
-[submodule "library/amdgcn"]
-	path = library/amdgcn
-	url = https://github.com/RadeonOpenCompute/ROCm-Device-Libs
 [submodule "api/opencl/khronos/icd"]
 	path = api/opencl/khronos/icd
 	url = https://github.com/apc-llc/OpenCL-ICD-Loader.git
