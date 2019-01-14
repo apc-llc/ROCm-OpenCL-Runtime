@@ -58,7 +58,7 @@ static const AMDDeviceInfo DeviceInfo[] = {
     /* TARGET_ICELAND */ {HSA_ICELAND_ID, "", "iceland", "gfx802", "Iceland", 4, 16, 1, 256, 64 * Ki, 32, 0,
                           0, false},
     /* TARGET_FIJI */ {HSA_FIJI_ID, "", "fiji", "gfx803", "Fiji", 4, 16, 1, 256, 64 * Ki, 32, 0, 0, false},
-    /* TARGET HAWAII */ {HSA_HAWAII_ID, "", "hawaii", "", "Hawaii", 4, 16, 1, 256, 64 * Ki, 32, 0, 0, false},
+    /* TARGET HAWAII */ {HSA_HAWAII_ID, "", "hawaii", "gfx701", "Hawaii", 4, 16, 1, 256, 64 * Ki, 32, 0, 0, false},
     /* TARGET ELLESMERE */ {HSA_ELLESMERE_ID, "", "polaris10", "gfx803", "Ellesmere", 4, 16, 1, 256, 64 * Ki,
                             32, 0, 0, false},
     /* TARGET BAFFIN */ {HSA_BAFFIN_ID, "", "polaris11", "gfx803", "Baffin", 4, 16, 1, 256, 64 * Ki, 32, 0,
